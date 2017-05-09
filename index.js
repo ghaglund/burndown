@@ -131,7 +131,7 @@ controller.on('slash_command', function (slashCommand, message) {
                                         ]
                     });
                 return;
-            } else slashCommand.replyPublic(message, "I'm afraid I don't know how to do " + message.command + " yet.") return;
+            } else { slashCommand.replyPublic(message, "I'm afraid I don't know how to do " + message.command + " yet.") return;}
 
             // If we made it here, just echo what the user typed back at them
             //TODO You do it!
