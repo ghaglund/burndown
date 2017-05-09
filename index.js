@@ -103,7 +103,18 @@ controller.on('slash_command', function (slashCommand, message) {
                 return;
             } else if (message.text === "Android") {
                 slashCommand.replyPrivate(message,
-                    "This is the Android burndown chart");
+                    {
+                        "attachments": [
+                                            {
+                                                "fallback": "Network traffic (kb/s): How does this look? @slack-ops - Sent by Julie Dodd - https://datadog.com/path/to/event",
+                                                "title": "Network traffic (kb/s)",
+                                                "title_link": "https://datadog.com/path/to/event",
+                                                "text": "How does this look? @slack-ops - Sent by Julie Dodd",
+                                                "image_url": "https://datadoghq.com/snapshot/path/to/snapshot.png",
+                                                "color": "#764FA5"
+                                            }
+                                        ]
+                    });
                 return;
             } else if (message.text === "iOS") {
                 slashCommand.replyPrivate(message,
