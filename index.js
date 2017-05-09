@@ -101,11 +101,19 @@ controller.on('slash_command', function (slashCommand, message) {
                     "You forgot to type which team's burndown to view. " +
                     "Try typing `/burndown Android` or `/burndown iOS` to see burndown chart.");
                 return;
-            }
+            } else if (message.text === "Android") {
+                slashCommand.replyPrivate(message,
+                    "This is the Android burndown chart");
+                return;
+            } else if (message.text === "Android") {
+                slashCommand.replyPrivate(message,
+                    "This is the iOS burndown chart");
+                return;
+            } else return;
 
             // If we made it here, just echo what the user typed back at them
             //TODO You do it!
-            slashCommand.replyPublic(message, "1");
+            //slashCommand.replyPublic(message, "1");
 
             break;
         default:
