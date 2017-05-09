@@ -105,9 +105,16 @@ controller.on('slash_command', function (slashCommand, message) {
                 slashCommand.replyPrivate(message,
                     "This is the Android burndown chart");
                 return;
-            } else if (message.text === "Android") {
+            } else if (message.text === "iOS") {
                 slashCommand.replyPrivate(message,
-                    "This is the iOS burndown chart");
+                    {
+                        "text": "It's 80 degrees right now.",
+                        "attachments": [
+                                            {
+                                        "text":"Partly cloudy today and tomorrow"
+                                            }
+                                        ]
+                    });
                 return;
             } else return;
 
