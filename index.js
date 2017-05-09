@@ -88,7 +88,7 @@ controller.setupWebserver(process.env.PORT, function (err, webserver) {
 controller.on('slash_command', function (slashCommand, message) {
 
     switch (message.command) {
-        case "/burndown": //handle the `/echo` slash command. We might have others assigned to this app too!
+        case "/burndown": //handle the `/burndown` slash command. We might have others assigned to this app too!
             // The rules are simple: If there is no text following the command, treat it as though they had requested "help"
             // Otherwise just echo back to them what they sent us.
 
@@ -105,9 +105,7 @@ controller.on('slash_command', function (slashCommand, message) {
 
             // If we made it here, just echo what the user typed back at them
             //TODO You do it!
-            //slashCommand.replyPublic(message, "1", function() {
-            //    slashCommand.replyPublicDelayed(message, "2").then(slashCommand.replyPublicDelayed(message, "3"));
-            //});
+            slashCommand.replyPublic(message, "1");
 
             break;
         default:
