@@ -110,7 +110,7 @@ controller.on('slash_command', function (slashCommand, message) {
                                                 "title": "Burndown for Android",
                                                 "title_link": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
                                                 "text": "This is how we're doing! @burndown-ops",
-                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image&timestamp=21321312",
+                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image&timestamp="+ +new Date,
                                                 "thumb_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
                                                 "color": "#262226",
                                                 "ts": "123"
@@ -127,7 +127,7 @@ controller.on('slash_command', function (slashCommand, message) {
                                                 "title": "Burndown for iOS",
                                                 "title_link": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image",
                                                 "text": "This is how we're doing! @burndown-ops",
-                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image",
+                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image"+ +new Date,
                                                 "color": "#262226"
                                             }
                                         ]
