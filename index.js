@@ -96,12 +96,12 @@ controller.on('slash_command', function (slashCommand, message) {
             if (message.token !== process.env.VERIFICATION_TOKEN) return; //just ignore it.
 
             // if no text was supplied, treat it as a help command
-            if (message.text === "" || message.text === "help") {
+            if (message.text === "" || message.text.toUpperCase() === "HELP") {
                 slashCommand.replyPrivate(message,
                     "You forgot to type which team's burndown to view. " +
                     "Try typing `/burndown Android` or `/burndown iOS` to see burndown chart.");
                 return;
-            } else if (message.text === "Android") {
+            } else if (message.text.toUpperCase() === "ANDROID") {
                 slashCommand.replyPrivate(message,
                     {
                         "attachments": [
@@ -116,7 +116,7 @@ controller.on('slash_command', function (slashCommand, message) {
                                         ]
                     });
                 return;
-            } else if (message.text === "iOS") {
+            } else if (message.text.toUpperCase() === "IOS") {
                 slashCommand.replyPrivate(message,
                     {
                         "attachments": [
