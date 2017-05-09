@@ -106,11 +106,11 @@ controller.on('slash_command', function (slashCommand, message) {
                     {
                         "attachments": [
                                             {
-                                                "fallback": "Network traffic (kb/s): How does this look? @slack-ops - Sent by Julie Dodd - https://datadog.com/path/to/event",
-                                                "title": "Network traffic (kb/s)",
-                                                "title_link": "https://datadog.com/path/to/event",
-                                                "text": "How does this look? @slack-ops - Sent by Julie Dodd",
-                                                "image_url": "https://datadoghq.com/snapshot/path/to/snapshot.png",
+                                                "fallback": "Burndown for Android: This is how we're doing! @burndown-ops - https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
+                                                "title": "Burndown for Android",
+                                                "title_link": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
+                                                "text": "This is how we're doing! @burndown-ops",
+                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
                                                 "color": "#764FA5"
                                             }
                                         ]
