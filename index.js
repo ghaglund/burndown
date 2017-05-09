@@ -119,10 +119,14 @@ controller.on('slash_command', function (slashCommand, message) {
             } else if (message.text === "iOS") {
                 slashCommand.replyPrivate(message,
                     {
-                        "text": "It's 80 degrees right now.",
                         "attachments": [
                                             {
-                                        "text":"Partly cloudy today and tomorrow"
+                                                "fallback": "Burndown for iOS: This is how we're doing! @burndown-ops - https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image",
+                                                "title": "Burndown for iOS",
+                                                "title_link": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image",
+                                                "text": "This is how we're doing! @burndown-ops",
+                                                "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1144902157&format=image",
+                                                "color": "#764FA5"
                                             }
                                         ]
                     });
