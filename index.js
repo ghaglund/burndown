@@ -98,7 +98,7 @@ controller.on('slash_command', function (slashCommand, message) {
             // if no text was supplied, treat it as a help command
             if (message.text === "" || message.text === "help") {
                 slashCommand.replyPrivate(message,
-                    "You forgot to typw which team's burndown to view. " +
+                    "You forgot to type which team's burndown to view. " +
                     "Try typing `/burndown Android` or `/burndown iOS` to see burndown chart.");
                 return;
             }
@@ -111,7 +111,7 @@ controller.on('slash_command', function (slashCommand, message) {
 
             break;
         default:
-            slashCommand.replyPublic(message, "I'm afraid I don't know how to " + message.command + " yet.");
+            slashCommand.replyPublic(message, "I'm afraid I don't know how to do " + message.command + " yet.");
 
     }
 
