@@ -102,7 +102,7 @@ controller.on('slash_command', function (slashCommand, message) {
                     "Try typing `/burndown Android` or `/burndown iOS` to see burndown chart.");
                 return;
             } else if (message.text.toUpperCase() === "ANDROID") {
-                slashCommand.replyPrivate(message,
+                slashCommand.replyPublic(message,
                     {
                         "attachments": [
                                             {
@@ -112,14 +112,13 @@ controller.on('slash_command', function (slashCommand, message) {
                                                 "text": "This is how we're doing! @burndown-ops",
                                                 "image_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image&timestamp="+ +new Date,
                                                 "thumb_url": "https://docs.google.com/spreadsheets/d/1tHC8uRyAP7mYiK0M7GuhlWpIIuqoG-V73w6Wl3QpTH8/pubchart?oid=1187944909&format=image",
-                                                "color": "#262226",
-                                                "ts": "123"
+                                                "color": "#262226"
                                             }
                                         ]
                     });
                 return;
             } else if (message.text.toUpperCase() === "IOS") {
-                slashCommand.replyPrivate(message,
+                slashCommand.replyPublic(message,
                     {
                         "attachments": [
                                             {
